@@ -1,0 +1,147 @@
+/* MAIN INDE PAGE */
+body{
+    font-family: Sans-serif;
+}
+nav{
+    margin: 0;
+    padding: 5px 10%;
+    box-sizing: border-box;
+    background-color:pink;
+    border-bottom: 15px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+ }
+ .logo{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+ }
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-link li a{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+}
+/*changes the color when you hover over the links*/
+.nav-link li a:hover{
+    color:  rgb(231, 153, 179);
+}
+.photos{
+    
+    padding: 25px;
+    margin: 40px;
+    height: 350px;
+    width: 350px;
+}
+photo-gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.description{
+    display: flex;
+    flex-direction: row; 
+}
+/* entire description section */
+.description {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around; /* Space out the cookie descriptions */
+ align-items: flex-start;
+ padding: 50px 10%;
+ background-color: #fffaf0; 
+}
+
+
+.des {
+ width: 30%; /*consistent width */
+ margin: 0 15px;
+ border: 2px solid #ffc0cb;
+ border-radius: 12px;
+}
+
+.des:hover {
+ transform: translateY(-5px); /* Lift the card slightly on hover */
+ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.Box Topics details p,
+.Topics details div,
+.Topics details span {
+    background-color: #f1e5da; 
+    color: black;              
+    padding: 15px;             /* spacing */
+    border-radius: 0 0 10px 10px; 
+    margin: 0;
+    text-align: left;          
+    line-height: 1.6;          
+}
+
+
+.des summary {
+ background-color: #ff69b4; 
+ color: white;
+ padding: 15px 20px;
+ font-size: 1.3em;
+font-weight: bold;
+cursor: pointer;
+border-radius: 10px 10px 0 0; 
+list-style: none; /* Hide the default arrow/marker */
+}
+
+
+/* Styling inside <details> */
+.des p {
+padding: 20px;
+margin: 0;
+background-color: #ffe4e6;
+line-height: 1.6;
+font-size: 1em;
+color: #333;
+border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+.Table{
+
+width: 80%; /* Make it wider */
+margin: 50px auto; /* Center the table and add space */
+border-collapse: separate;
+border-spacing: 0;
+border-radius: 15px; 
+overflow: hidden;
+font-size: 1.2em;
+}
+
+.Table th, .Table td {
+padding: 15px; /*  padding for bigger cells */
+text-align: center;
+border-bottom: 1px solid #ffcee4; 
+}
+
+.Top{
+background-color: #ff69b4;
+color: white;
+font-weight: bold;
+}
+
+
+#voteCountRow {
+background-color: #ffe4e6; 
+}
+
+
+#percentageRow {
+background-color: #ffc0cb; 
+font-weight: bold;
+}
