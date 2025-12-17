@@ -1,0 +1,283 @@
+nav{
+    margin: 0;
+    padding: 5px 10%;
+    box-sizing: border-box;
+    background-color:pink;
+    border-bottom: 15px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+ }
+ .logo{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+ }
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-link li a{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+}
+/*changes the color when you hover over the links*/
+.nav-link li a:hover{
+    color:  rgb(231, 153, 179);
+}
+
+/* --- Root Colors --- */
+:root {
+    --color-pink-soft: #FFC0CB; /* Soft Pink */
+    --color-beige-light: #F5F5DC; /* Light Beige background */
+    --color-cream: #FFFDD0; /* Creamy White */
+    --color-pink-accent: rgb(231, 153, 179); /* Darker Pink accent */
+    --color-dark: #333;
+}
+
+/* --- Existing Navigation Styles --- */
+body{
+    font-family: Sans-serif;
+    background-color: var(--color-beige-light); /* Set aesthetic background */
+    padding-top: 100px; /* Space for fixed navigation bar */
+}
+nav{
+    margin: 0;
+    padding: 5px 10%;
+    box-sizing: border-box;
+    background-color:pink;
+    border-bottom: 15px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+}
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-link li a{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+/*changes the color when you hover over the links*/
+.nav-link li a:hover{
+    color: var(--color-pink-accent);
+}
+/* --- Root Colors --- */
+:root {
+    --color-pink-soft: #FFC0CB; /* Soft Pink */
+    --color-beige-light: #F5F5DC; /* Light Beige background */
+    --color-cream: #FFFDD0; /* Creamy White */
+    --color-pink-accent: rgb(231, 153, 179); /* Darker Pink accent */
+    --color-dark: #333;
+}
+
+/* --- Navigation Styles --- */
+body{
+    font-family: Sans-serif;
+    background-color: var(--color-beige-light); 
+    padding-top: 100px; 
+}
+nav{
+    margin: 0;
+    padding: 5px 10%;
+    box-sizing: border-box;
+    background-color:pink;
+    border-bottom: 15px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+}
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-link li a{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.nav-link li a:hover{
+    color: var(--color-pink-accent);
+}
+
+/* --- Game Container Layout --- */
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 10%;
+    gap: 30px;
+}
+
+/* --- Cookie Preview Panel --- */
+.cookie-preview-panel {
+    flex: 1;
+    min-width: 400px;
+    background-color: var(--color-cream);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cookie-preview {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 40px auto;
+}
+
+/* Style for the single composite image layer */
+#cookie-base { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: background-image 0.3s ease;
+    border: 5px solid var(--color-pink-accent);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent; 
+    z-index: 10;
+}
+
+/* Cute Face on the cookie */
+.cookie-face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 40;
+    font-size: 50px;
+    pointer-events: none; 
+    visibility: hidden; 
+}
+
+/* --- Control Panel & Price --- */
+.control-panel {
+    margin-top: 20px;
+}
+
+.price-display {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-dark);
+    margin-bottom: 15px;
+}
+
+.control-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.reset {
+    background-color: #F0A3A3; 
+    color: white;
+}
+.reset:hover { background-color: #E08989; }
+
+.order {
+    background-color: var(--color-pink-accent);
+    color: white;
+}
+.order:hover { background-color: #C07090; }
+
+/* --- Selection Menu --- */
+.selection-menu {
+    flex: 2;
+    min-width: 600px;
+    background-color: var(--color-cream);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.selection-menu h1, .selection-menu h3 {
+    color: var(--color-pink-accent);
+    text-align: center;
+}
+
+.selection-category {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid var(--color-pink-soft);
+    border-radius: 15px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.ingredient-btn {
+    padding: 10px 15px;
+    border: 2px solid var(--color-pink-soft);
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.ingredient-btn:hover {
+    background-color: var(--color-pink-soft);
+}
+
+.ingredient-btn.selected {
+    background-color: var(--color-pink-accent);
+    color: white;
+    border-color: var(--color-dark);
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

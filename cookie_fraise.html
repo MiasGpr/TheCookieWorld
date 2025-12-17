@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="stylesheet" href="style/cookie_fraise.css">
+      <meta charset="UTF-8"/>
+   </head>
+   	<body>
+		   <!--navigation bar-->
+            <nav class="nav">
+            <div class="logo">Cookie World</div>
+        <ul class="nav-link">
+            <li><a href="favcookie copy.html">Home</a></li>
+            <li><a href="ourCookies.html">Our Cookies</a></li>
+            <li><a href="Store.html">Store</a></li>
+            <li><a href="allergies.html">Allergies</a></li>
+            <li><a href="minigame.html">Mini Game</a></li>
+            <!--icons-->
+            <li><a><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        </nav>
+
+        <section>
+    <div class="main">
+        
+        <div class="container">
+    
+    <div class="image-col">
+        <img src="/photoCookie/17653554133721738553.png" class="photos" alt="fra">  
+        
+        <div class="vitrine">
+            <img src="/photoCookie/17653554133721738553.png" class="fraise_1" alt="fra_1">
+            <img src="/photoCookie/fraise_2.jpg" class="fraise_1" alt="fra_2">
+            <img src="/photoCookie/cookie_3.jpg" class="fraise_1" alt="fra_3">
+            <img src="/photoCookie/cookie_4.jpg" class="fraise_1" alt="fra_4">
+        </div>
+    </div>
+    <div class="container_product">
+        <h1>Strawberry cookie</h1>
+        <p>Description: Cookie with pieces of strawberries and white chocolate chips,<br> topped with a strawberry coulis.<br><br>
+        Price: 2.50$</p>
+        <button class="favorite styled" type="button">Buy now</button>
+        <button class="favorite styled" type="button">Add to cart</button>
+        <div style="border-bottom: 1px solid black; width: 100%; margin-top: 20px;"></div>
+
+        <h2>Composition:</h2><br><p>Wheat flour, white chocolate chips 25% (sugar, cocoa butter, whole milk powder, emulsifier: soy lecithin, natural vanilla flavoring),
+             unsalted butter, sugar, brown sugar, candied strawberry cubes 8% (strawberry, sugar, acidity regulator: citric acid), fresh eggs, natural strawberry flavoring,
+              raising agents (diphosphates, sodium carbonates), salt, natural coloring 
+            (beetroot red).</p>
+    </div>
+
+</div>
+
+</div>
+    </div>
+</section>
+    
+<script>
+    const grandeImage = document.querySelector('.photos');
+    const petitesImages = document.querySelectorAll('.vitrine img');
+
+    petitesImages.forEach(function(petiteImage) {
+        
+        // Pour chaque image, on ajoute une détection du 'click'
+        petiteImage.addEventListener('click', function() {
+            
+            const nouveauSrc = this.src;
+
+            grandeImage.src = nouveauSrc;
+        });
+
+    });
+</script>
+</body>
+    </html>

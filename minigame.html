@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/style/Minigame.css">
+        <script src="/js/minigame.js" defer></script>
+      <meta charset="UTF-8" />
+      <title>Cookie World Mini Game</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo">Cookie World</div>
+        <ul class="nav-link">
+            <li><a href="allergies.html">Home</a></li>
+            <li><a href="ourCookies.html">Our Cookies</a></li>
+            <li><a href="Store.html">Store</a></li>
+            <li><a href="allergies.html">Allergies</a></li>
+            <li><a href="minigame.html">Mini Game</a></li>
+            <li><a><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        </nav>
+
+        <main class="game-container">
+            
+            <section class="cookie-preview-panel">
+                <h2>Your Custom Cookie</h2>
+                <div class="cookie-preview">
+                    <div id="cookie-base" class="cookie-layer base"></div>
+                    <div class="cookie-face"></div>
+                </div>
+                <div class="control-panel">
+                    <p class="price-display">Current Cost: $<span id="current-price">0.00</span></p>
+                    <button id="reset-button" class="control-btn reset">Reset Cookie</button>
+                    <button id="order-button" class="control-btn order">Order Cookie!</button>
+                </div>
+            </section>
+
+            <section class="selection-menu">
+                <h1>Pick Your Ingredients</h1>
+                
+                <div class="selection-category">
+                    <h3>Base ($2.00)</h3>
+                    <div id="base-options" class="options-container">
+                        <button class="ingredient-btn" data-type="base" data-name="Red Velvet" data-id="redvelvet" data-cost="2.00">Red Velvet</button>
+                        <button class="ingredient-btn" data-type="base" data-name="Vanilla" data-id="vanilla" data-cost="2.00">Vanilla</button>
+                        <button class="ingredient-btn" data-type="base" data-name="Chocolate" data-id="chocolate" data-cost="2.00">Chocolate</button>
+                        <button class="ingredient-btn" data-type="base" data-name="Matcha" data-id="matcha" data-cost="2.00">Matcha</button>
+                    </div>
+                </div>
+
+                <div class="selection-category">
+                    <h3>Frosting ($1.50)</h3>
+                    <div id="frosting-options" class="options-container">
+                        <button class="ingredient-btn" data-type="frosting" data-name="Pink Icing" data-id="pink-icing" data-cost="1.50">Pink Icing</button>
+                        <button class="ingredient-btn" data-type="frosting" data-name="White Cream" data-id="white-cream" data-cost="1.50">White Cream</button>
+                        <button class="ingredient-btn" data-type="frosting" data-name="None" data-id="none" data-cost="0.00">None</button>
+                    </div>
+                </div>
+
+                <div class="selection-category">
+                    <h3>Toppings ($0.50 each)</h3>
+                    <div id="topping-options" class="options-container">
+                        <button class="ingredient-btn" data-type="topping" data-name="Rainbow Sprinkles" data-id="sprinkles" data-cost="0.50">Sprinkles</button>
+                        <button class="ingredient-btn" data-type="topping" data-name="Chocolate Drizzle" data-id="drizzle" data-cost="0.50">Drizzle</button>
+                        <button class="ingredient-btn" data-type="topping" data-name="Strawberry Slice" data-id="strawberry" data-cost="0.50">Strawberry</button>
+                        <button class="ingredient-btn" data-type="topping" data-name="None" data-id="none" data-cost="0.00">None</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </body>
+</html>

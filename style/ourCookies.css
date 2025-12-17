@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+.cabin-sketch-regular {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cabin-sketch-bold {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+    font-family: "Cabin Sketch", sans-serif;
+}
+
+nav{
+    margin: 0;
+    padding: 5px 10%;
+    box-sizing: border-box;
+    background-color:pink;
+    border-bottom: 15px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+ }
+ .logo{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+ }
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-link li a{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+}
+/*changes the color when you hover over the links*/
+.nav-link li a:hover{
+    color:  rgb(231, 153, 179);
+}
+
+.cookie_fraise{
+
+    background-color: rgb(255, 34, 159);
+    position: absolute;
+    margin-left: 5%;
+    border-radius: 17px;
+    margin-top: 10%;
+    color: white;   
+}
+
+.cookie_fraise img{
+
+    filter: drop-shadow(5px 5px 20px #ffffff9b);
+    display: flex;
+    justify-content: center;
+}
+
+.cookie_fraise h2{
+
+    text-align: center;
+    margin-top: -15%;
+    color: white;
+}
+
+.cookie_fraise p{
+    font-size: 14px;
+}
+
+.cookie_vanille{
+    background-color: rgb(179, 164, 0);
+    position: absolute;
+    margin-left: 35%;
+    border-radius: 17px;
+    margin-top: 10%;
+    color: white;
+}
+
+.cookie_vanille p{
+    font-size: 14px;
+}
+
+.cookie_vanille img{
+
+    filter: drop-shadow(10px 10px 20px #ffffff9b);
+}
+
+.cookie_vanille h2{
+
+    text-align: center;
+    margin-top: -15%;
+    color: white;
+}
+
+.cookie_chocolat{
+    background-color: rgb(140, 61, 0);
+    position: absolute;
+    margin-left: 66%;
+    border-radius: 17px;
+    margin-top: 10%;
+    color: white;
+} 
+
+.cookie_chocolat h2{
+
+    text-align: center;
+    margin-top: -15%;
+    color: white;
+    
+}
+
+
+.cookie_chocolat img{
+
+    filter: drop-shadow(5px 5px 20px #ffffff9b);
+    margin-left: 20%;
+}
+
+.cookie_chocolat p{
+    font-size: 14px;
+}
+
+.photos{
+    
+    padding: 15px;
+    margin: 90px;
+    height: 210px;
+    width: 210px;
+}
+photo-gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-left: 100px;
+}
+.description{
+    display: flex;
+    flex-direction: row; 
+}
+
+.compo{
+    font-size: 13px;
+    margin-left: 5px;
+}
